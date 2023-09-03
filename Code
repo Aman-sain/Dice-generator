@@ -1,10 +1,9 @@
 import random 
 
 dice = []
-sum=0
 for i in range(5):
     dice.append(random.randint(1,6))
     print(f"Dice {i+1}: "+str(dice[i]))
-    sum += dice[i]
     
-print("Total sum = "+str(sum))
+print("Total sum = " + str(sum(dice)))
+    
