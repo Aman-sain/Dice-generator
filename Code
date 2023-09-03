@@ -3,7 +3,6 @@ import random
 dice = []
 for i in range(5):
     dice.append(random.randint(1,6))
-    print(f"Dice {i+1}: "+str(dice[i]))
+    print(f"Dice {i+1}: {dice[i]}")
     
-print("Total sum = " + str(sum(dice)))
-    
+print(f"Total sum = {sum(dice)}")
