@@ -8,4 +8,4 @@ for i in range(5):
     print(f"Dice {i+1}: "+str(dice[i]))
     
 print("Total sum = " + str(sum(dice)))
-    .google.com/url?q=https://forms.gle/LeXZDo3p1eX9Vv518&sa=D&source=editors&ust=1686061088605051&usg=AOvVaw0qxdKbEr8ihf_b5B-uc7pa
+   
