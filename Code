@@ -1,8 +1,38 @@
-import random 
+# Welcome to the Magical Dice Roller!
+# Where randomness meets excitement!
 
-dice = []
-for i in range(5):
-    dice.append(random.randint(1,6))
-    print(f"Dice {i+1}: {dice[i]}")
-    
-print(f"Total sum = {sum(dice)}")
+# Import the mystical random module
+import random
+
+# Behold! The function that summons the dice spirits
+def roll_dice():
+  # The ancient ritual to generate a number between 1 and 6
+  number = random.randint(1, 6)
+  # The chosen one returns the number
+  return number
+
+# Seeker of fortune, how many rolls do you desire?
+times = int(input("How many times shall the dice dance? Enter your desired number of rolls: "))
+
+# Preparing the mystical scroll to record the results
+results = []
+
+# The dice shall roll as many times as you command
+for i in range(times):
+  # The spirits are summoned, and the result is etched in destiny
+  result = roll_dice()
+  results.append(result)
+
+# Witness the revelation of your destiny!
+print("Behold, the mystical dice have spoken! The results are:", results)
+
+# And now, the grand total shall be unveiled!
+sum = 0
+for result in results:
+  sum += result
+
+# The sum of your fortune is revealed
+print("The sum of the dice's wisdom is:", sum)
+
+# Your journey with the Magical Dice Roller concludes!
+# May your future be filled with joy and randomness!
