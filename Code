@@ -35,4 +35,4 @@ for result in results:
 print("The sum of the dice's wisdom is:", sum)
 
 # Your journey with the Magical Dice Roller concludes!
-# May your future be filled with joy and randomness!
+# May your future be filled with joy and randomness!!
