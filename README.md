@@ -8,6 +8,7 @@ for i in range(5):
     print(f"Dice {i+1}: "+str(dice[i]))
     
 print("Total sum = " + str(sum(dice)))
+
 1.Importing the random module: 
 
 ->The code begins by importing Python's built-in random module. This module provides functions for generating random numbers, which is essential for simulating the roll of a dice. 
