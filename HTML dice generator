@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magical Dice Roller</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        #container {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            max-width: 400px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #result {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        #sum {
+            font-size: 30px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Styling for dice images */
+        #dice-images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .dice-image {
+            width: 80px;
+            height: 80px;
+            margin: 0 20px;
+            border-radius: 50%;
+            border: 2px solid #007BFF;
+        }
+
+        p {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        input {
+            font-size: 18px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Welcome to the Magical Dice Roller!</h1>
+        <p>Where randomness meets excitement!</p>
+    </div>
+
+    <div id="container">
+        <p>Seeker of fortune, how many dice would you like to roll (up to 5)?</p>
+        <input type="number" id="diceCount" min="1" max="5" value="1">
+        <br>
+        <button onclick="rollDice()">Roll the Dice</button>
+
+        <div id="result"></div>
+        <div id="sum"></div>
+
+        <!-- Dice images section -->
+        <div id="dice-images"></div>
+    </div>
+
+    <script>
+        function rollDice() {
+            const diceCount = parseInt(document.getElementById("diceCount").value);
+            const results = [];
+
+            for (let i = 0; i < diceCount; i++) {
+                const result = Math.floor(Math.random() * 6) + 1;
+                results.push(result);
+            }
+
+            document.getElementById("result").textContent = "Behold, the mystical dice have spoken! The results are: " + results.join(', ');
+            
+            const sum = results.reduce((acc, curr) => acc + curr, 0);
+            document.getElementById("sum").textContent = "The sum of the dice's wisdom is: " + sum;
+
+            // Display dice images
+            const diceImagesContainer = document.getElementById("dice-images");
+            diceImagesContainer.innerHTML = ""; // Clear previous images
+
+            for (let i = 0; i < diceCount; i++) {
+                const diceImage = document.createElement("img");
+                diceImage.className = "dice-image";
+                diceImage.src = `dice${results[i]}.png`;
+                diceImage.alt = `Dice ${results[i]}`;
+                diceImagesContainer.appendChild(diceImage);
+            }
+        }
+    </script>
+</body>
+</html>
