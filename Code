@@ -31,7 +31,7 @@ sum = 0
 for result in results:
   sum += result
 
-# The sum of your fortune is revealed
+# The sum of your fortune is revealed.
 print("The sum of the dice's wisdom is:", sum)
 
 # Your journey with the Magical Dice Roller concludes!
