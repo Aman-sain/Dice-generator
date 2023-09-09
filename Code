@@ -26,7 +26,7 @@ for i in range(times):
 # Witness the revelation of your destiny!
 print("Behold, the mystical dice have spoken! The results are:", results)
 
-# And now, the grand total shall be unveiled!
+# And now, the grand total shall be unveiled!!
 sum = 0
 for result in results:
   sum += result
