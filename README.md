@@ -9,11 +9,11 @@ for i in range(5):
     
 print("Total sum = " + str(sum(dice)))
 
-1.Importing the random module: 
+1. Importing the random module: 
 
 ->The code begins by importing Python's built-in random module. This module provides functions for generating random numbers, which is essential for simulating the roll of a dice. 
 
-2.Defining the roll_dice() function: 
+2. Defining the roll_dice() function: 
 
 ->The roll_dice() function is defined to simulate the rolling of a standard six-sided dice. 
 
@@ -25,33 +25,33 @@ print("Total sum = " + str(sum(dice)))
 
  
 
-3.Asking the user for input: 
+3. Asking the user for input: 
 
 ->The program prompts the user to enter the number of times they want to roll the dice using the input() function. The input is converted to an integer and stored in the variable times. 
 
-4.Initializing an empty list results: 
+4. Initializing an empty list results: 
 
 ->An empty list named results is created to store the outcomes of the dice rolls. 
 
-5.Rolling the dice as many times as specified: 
+5. Rolling the dice as many times as specified: 
 
 ->A for loop is used to roll the dice the number of times specified by the user (stored in the times variable). 
 
 ->Inside the loop, the roll_dice() function is called, and the result (the outcome of the dice roll) is appended to the results list.   
 
-6.Displaying the dice roll outcomes: 
+6. Displaying the dice roll outcomes: 
 
 ->After all the dice rolls are completed, the program prints the results using print("Behold, the mystical dice have spoken! The results are:", results). 
 
-7.Calculating the sum of the outcomes: 
+7. Calculating the sum of the outcomes: 
 
 ->Another for loop is used to iterate through the results list, and the values are added together to calculate the sum of the dice roll outcomes. The sum is stored in the variable sum. 
 
-8.Displaying the sum: 
+8. Displaying the sum: 
 
 ->Finally, the program prints the sum of the dice roll outcomes using print("The sum of the dice's wisdom is:", sum).
 
-9.Conclusion: 
+9. Conclusion: 
 
 ->The program concludes with a friendly message, thanking the user for using the Magical Dice Roller. 
 
