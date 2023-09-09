@@ -1,5 +1,5 @@
-# Welcome to the Magical Dice Roller!
-# Where randomness meets excitement!
+# Welcome to the Magical Dice Roller!!
+# Where randomness meets excitement!!
 
 # Import the mystical random module
 import random
@@ -34,5 +34,5 @@ for result in results:
 # The sum of your fortune is revealed.
 print("The sum of the dice's wisdom is:", sum)
 
-# Your journey with the Magical Dice Roller concludes!
+# Your journey with the Magical Dice Roller concludes!!
 # May your future be filled with joy and randomness!!
