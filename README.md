@@ -55,4 +55,6 @@ print("Total sum = " + str(sum(dice)))
 
 ->The program concludes with a friendly message, thanking the user for using the Magical Dice Roller. 
 
-In summary, this Python program allows the user to simulate rolling a six-sided dice multiple times, records the outcomes, calculates the sum of those outcomes, and then displays the results to the user. It's a fun and simple example of using random number generation and basic control structures in Python. 
+In summary, this Python program allows the user to simulate rolling a six-sided dice multiple times, records the outcomes, calculates the sum of those outcomes, and then displays the results to the user. It's a fun and simple example of using random number generation and basic control structures in Python.
+
+10. Feedback:
