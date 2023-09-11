@@ -60,3 +60,6 @@ In summary, this Python program allows the user to simulate rolling a six-sided 
 10. Feedback:
 
 ->We created a feedback form to gather feedback from a diverse group of people. This feedback form has been shared with students. Their responses and perspectives will provide valuable information to help us assess the project's effectiveness and identify areas for improvement.
+
+Link of Google form->
+https://docs.google.com/forms/d/e/1FAIpQLScL-L1Cg_NcIsYEaapatKufupELAB6WZFFcMOIx_uXMo8mTEA/viewform?usp=sf_link
