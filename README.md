@@ -58,3 +58,5 @@ print("Total sum = " + str(sum(dice)))
 In summary, this Python program allows the user to simulate rolling a six-sided dice multiple times, records the outcomes, calculates the sum of those outcomes, and then displays the results to the user. It's a fun and simple example of using random number generation and basic control structures in Python.
 
 10. Feedback:
+
+We created a feedback form to gather feedback from a diverse group of people. This feedback form has been shared with students. Their responses and perspectives will provide valuable information to help us assess the project's effectiveness and identify areas for improvement.
